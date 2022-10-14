@@ -36,7 +36,7 @@ public class Picture
         Cesped.moveHorizontal(-310);
         Cesped.moveVertical(50);
         Cesped.makeVisible();
-        
+                
         wall = new Square();
         wall.moveHorizontal(-140);
         wall.moveVertical(20);
@@ -55,7 +55,7 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-
+        
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
@@ -63,8 +63,16 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         sun.slowMoveVertical(-60);
+        
     }
-
+    /**
+     * Move this picture
+     */
+    public void atardecer()
+    {
+        sun.slowMoveVertical(200);
+        
+    }
     /**
      * Change this picture to black/white display
      */
